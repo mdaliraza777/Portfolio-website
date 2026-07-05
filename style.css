@@ -18,13 +18,13 @@ body{
     margin: auto;
 }
 .sidebar{
-    padding: 40px;
+    padding: 20px;
     background-color: #2a2a2a;
-    height: 90vh;
+    height: 92vh;
     border: 1px solid #3a3a3a;
     border-radius: 16px;
     position: sticky;
-    top: 40px;
+    top: 30px;
 }
 .main-content{
     background-color: #2a2a2a;
@@ -54,7 +54,7 @@ body{
     padding: 5px 15px;
     color: #ffbf00;
     border: 1px solid #3a3a3a;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-radius: 8px;
     display: inline-block;
     margin-top: 10px;
@@ -87,8 +87,8 @@ body{
     text-align: center;
 }
 .social-media img{
-    height: 24px;
-    width: 24px;
+    height: 30px;
+    width: 30px;
     margin-left: 5px;
     filter: grayscale(1) invert(0.7);
     transition: filter 0.3s ease;  
@@ -257,7 +257,7 @@ color: #e0e0e0;
     color: #a0a0a0;
     line-height: 1.6;
     text-align: start;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 .card span{
     background-color: #1e1e1e;
@@ -265,6 +265,18 @@ color: #e0e0e0;
     border-radius: 5px;
     font-size: 0.75rem;
     margin-right: 5px;
+}
+.link{
+  margin:15px 0px;
+  color: white;  
+  height: 50px;
+}
+.link a{
+    color: rgb(48, 48, 246);
+    font-size: 20px;
+}
+.link a:hover{
+    color:rgb(70, 70, 227);
 }
 
 
@@ -277,6 +289,12 @@ color: #e0e0e0;
     .sidebar{
         position: static;
         height: auto;
+    }
+}
+
+@media screen and (max-width:600px){
+   .project-container{
+        grid-template-columns: 1fr;
     }
 }
 
